@@ -74,7 +74,7 @@ def draw_splash(stdscr, quote):
     stdscr.clear()
     h, w = stdscr.getmaxyx()
 
-    title = "=== NIX-HABIT HUB v2.0 ==="
+    title = "=== NIX-HABIT HUB v2.0 (ПРИВЫЧКИ + ЗАМЕТКИ) ==="
     hint = "[ Нажми любую клавишу, чтобы войти ]"
 
     lines = wrap_text(quote, max(20, w - 10))
