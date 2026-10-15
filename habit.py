@@ -283,7 +283,7 @@ def main(stdscr):
     quote = random.choice(QUOTES)
     draw_splash(stdscr, quote)
 
-    active_tab = 0  # 0 = Привычки, 1 = Заметки
+    active_tab = 0
     sel_habit = 0
     sel_note = 0
 
@@ -371,7 +371,7 @@ def main(stdscr):
             active_tab = 0
         elif ch == "2":
             active_tab = 1
-        elif ch == chr(9):  # Tab
+        elif ch == chr(9):
             active_tab = 1 - active_tab
         elif ch in (curses.KEY_UP, "k", "K", "л", "Л"):
             if active_tab == 0 and habits:
